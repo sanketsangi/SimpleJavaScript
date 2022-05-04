@@ -1,4 +1,4 @@
-## SimpleJavaScript {center}
+## SimpleJavaScript
 [![Simple JavaScript Banner](https://s3.amazonaws.com/freecodecamp/wide-social-banner.png)](https://github.com/signuldotdev/SimpleJavaScript/blob/main/README.md)
 
 ## SimpleJavaScript to brush up on your JavaScript skills
@@ -9,7 +9,7 @@ JavaScript is a [prototype-based](https://developer.mozilla.org/en-US/docs/Gloss
 programming) styles.
 
 ## Table of Contents
-### Getting Started ⇒ JavaScript Fundamentals
+## Getting Started ⇒ JavaScript Fundamentals
 
 
 - [Table of Contents](#table-of-contents)
@@ -38,7 +38,7 @@ programming) styles.
 
 ----
 
-### JavaScript Fundamentals => Part 1
+## JavaScript Fundamentals => Part 1
 
 ---- 
 
