@@ -1,7 +1,7 @@
 ## SimpleJavaScript
-[![Simple JavaScript Banner](https://s3.amazonaws.com/freecodecamp/wide-social-banner.png)](https://github.com/signuldotdev/SimpleJavaScript/blob/main/README.md)
+[![Simple JavaScript Banner](./assets/SimpleJavaScriptBanner.png)](https://github.com/signuldotdev/SimpleJavaScript/blob/main/README.md)
 
-## SimpleJavaScript to brush up on your JavaScript skills
+## SimpleJavaScript to brush up your JavaScript skills
 
 **JavaScript** (**JS**) is a lightweight, interpreted, or [just-in-time](https://en.wikipedia.org/wiki/Just-in-time_compilation) compiled programming language with [first-class functions](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function). 
 
