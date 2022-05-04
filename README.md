@@ -11,7 +11,7 @@ programming) styles.
 ## Table of Contents
 ### Getting Started ⇒ JavaScript Fundamentals
 
-- [SimpleJavaScript to brush up on your JavaScript skills](#simplejavascript-to-brush-up-on-your-javascript-skills)
+
 - [Table of Contents](#table-of-contents)
   - [Getting Started ⇒ JavaScript Fundamentals](#getting-started--javascript-fundamentals)
   - [JavaScript Fundamentals => Part 1](#javascript-fundamentals--part-1)
@@ -481,5 +481,170 @@ take the values **true** or **false**.
 
 [Logical operators](https://javascript.info/logical-operators) are used to determine the logic between variables or values.
 
-Given that `x = 6` and `y = 3`, the table below explains the logical operators:
 
+## The Switch Statement
+
+> The switch statement is used to perform different actions based on different conditions.
+> 
+
+> **`Syntax:`**
+> 
+
+```jsx
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+```
+
+### Example
+
+The `getDay()` method returns the weekday as a number between 
+ 0 and 6.
+
+(Sunday=0, Monday=1, Tuesday=2 ..)
+
+This example uses the weekday number to calculate the weekday name:
+
+```jsx
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
+
+// Saturday
+```
+
+
+## Statements & Expressions
+
+- `**Statement`👇🏻**
+
+> JavaScript statement are composed of:
+> 
+
+> Values, Operators, Expressions, Keywords, and Comments.
+> 
+
+```jsx
+// This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":
+
+document.getElementById("demo").innerHTML = "Hello Dolly.";
+```
+
+- `**Expression 👇🏻**`
+
+> An expression is a snippet of code that evaluates to a value.
+> 
+
+```jsx
+// The below code snippets are all expressions. They all evaluate to a value.
+
+0 // 0
+
+1 + 1 // 2
+
+'Hello' + ' ' + 'World' // 'Hello World'
+
+{ answer: 42 } // { answer: 42 }
+
+Object.assign({}, { answer: 42 }) // { answer: 42 }
+
+answer !== 42 ? 42 : answer // 42
+
+answer = 42 // 42
+```
+
+
+## The Conditional (Ternary) Operator
+
+> The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is `truthy` followed by a colon (:), and finally the expression to execute if the condition is `falsy`. This operator is frequently used as a shortcut for the if statement.
+> 
+
+```jsx
+function getFee(isMember) {
+  return (isMember ? '$2.00' : '$10.00');
+}
+
+console.log(getFee(true));
+// expected output: "$2.00"
+
+console.log(getFee(false));
+// expected output: "$10.00"
+
+console.log(getFee(null));
+// expected output: "$10.00"
+```
+
+## JavaScript Release ES5, ES6+ & ESNext
+
+> A Brief History of JavaScript
+> 
+- 1995 👉🏻 Brendan Eich very first version of javascript in just 10 days.
+- 1996 👉🏻 JavaScript has almost nothing to do with Java.
+- 1997 👉🏻 Official Standard for JavaScript
+- 2009👉🏻 ES5 (ECMAScript 5) is released with lots of great new features.
+- 2015👉🏻 ES6/ES2015 was released the biggest update to the language ever!
+- 2016 - | 👉🏻 Release of ES2016/ES2017/ES2018/ES2019/ES2020/ES2021/ .../ ES2089 😂
+
+> Backwards Compatibility: Don't Break the Web!
+> 
+- Backwards Compatibility
+- Old features are never removed;
+- Not really new versions, just incremental updates(releases)
+- Websites keep working forever!
+
+> How to use Modern JavaScript Today
+> 
+- During development 👉🏻 Simply use the latest Google Chrome!
+- During production 👉🏻 Use Babel to transpile and polyfill your code (converting back to ES5 to ensure browser compatibility for all users).
+
+---- 
+
+# JavaScript Fundamentals- Part 2
+
+## Activating Strict Mode
+
+> `"use strict";` Defines that
+JavaScript code should be executed in
+"strict mode".
+> 
+- Always use strict mode on top of code.
+
+```jsx
+'use strict';
+```
+
+## Functions
+
+```jsx
+function Apple() {
+	console.log('iphone is Apple Inc. Product');
+}
+
+Apple();
+```
