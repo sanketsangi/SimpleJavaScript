@@ -1,4 +1,4 @@
-### SimpleJavaScript
+## SimpleJavaScript {center}
 [![Simple JavaScript Banner](https://s3.amazonaws.com/freecodecamp/wide-social-banner.png)](https://github.com/signuldotdev/SimpleJavaScript/blob/main/README.md)
 
 ## SimpleJavaScript to brush up on your JavaScript skills
