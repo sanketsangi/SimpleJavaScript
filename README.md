@@ -43,6 +43,8 @@ programming) styles.
   - [Functions Calling Other Functions](#functions-calling-other-functions)
   - [Introduction to Arrays](#introduction-to-arrays)
   - [Basic Arrays Operations Methods](#basic-arrays-operations-methods)
+  - [Introduction to Objects](#introduction-to-objects)
+  - [Dot vs Braket Notation](#dot-vs-braket-notation)
 
 
 ----
@@ -803,4 +805,86 @@ if (fruits.includes('orange')) {
 // 'You have a friend called orange'
 
 // 
+```
+
+
+## Introduction to Objects
+
+```jsx
+const johnArray = [
+  'John',
+  'Smith',
+  2037 - 1991,
+  'teacher',
+  ['apple', 'orange', 'banana']
+];
+
+const john = [
+  firstName: 'John',
+  lastName: 'Smith',
+  age: 2037 - 1991,
+  job: 'teacher',
+  favoriteFruit: ['apple', 'orange', 'banana']
+]
+
+
+```
+
+
+## Dot vs Braket Notation
+
+```jsx
+
+const john = {
+  firstName: 'John',
+  lastName: 'Smith',
+  age: 2037 - 1991,
+  job: 'teacher',
+  favoriteFruit: ['apple', 'orange', 'banana']
+};
+console.log(john);
+
+console.log(john.lastName);
+console.log(john["lastName"]);
+
+const namekey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+const intrestedIn = prompt('What do you want to know about John? Choose between firstName, lastName, age, job and favoriteFruit');
+
+if (jonas[intrestedIn]) {
+  console.log(jonas[intrestedIn]);
+} else {
+  console.log('Wrong request! Choose between firstName, lastName, age, job and favoriteFruit');
+}
+
+john.location = 'USA';
+john.twitter = '@johnsmith';
+console.log(john);
+
+// {
+//   firstName: 'John',
+//   lastName: 'Smith',
+//   age: 27,
+//   job: 'teacher',
+//   favoriteFruit: [ 'apple', 'orange', 'banana' ]
+// }
+
+// 'Smith'
+// 'Smith'
+// 'John'
+// 'Smith'
+
+// Object { firstName: "John", lastName: "Smith", age: 46, job: "teacher", favoriteFruit: (3) […] }
+// ​
+// age: 46
+// ​
+// favoriteFruit: Array(3) [ "apple", "orange", "banana" ]
+// ​
+// firstName: "John"
+// ​
+// job: "teacher"
+// ​
+// lastName: "Smith"
 ```
