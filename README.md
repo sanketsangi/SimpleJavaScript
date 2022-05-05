@@ -1,15 +1,37 @@
-[![Simple JavaScript Banner](./assets/SimpleJavaScriptBanner.png)](https://github.com/signuldotdev/SimpleJavaScript/blob/main/README.md) 
+[![Simple JavaScript Banner](./assets/SimpleJavaScriptBanner.png)](https://github.com/signuldotdev/SimpleJavaScript/blob/main/README.md)
 
 ## SimpleJavaScript to brush up your JavaScript skills
 
-**JavaScript** (**JS**) is a lightweight, interpreted, or [just-in-time](https://en.wikipedia.org/wiki/Just-in-time_compilation) compiled programming language with [first-class functions](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function). JavaScript is a [prototype-based](https://developer.mozilla.org/en-US/docs/Glossary/Prototype-based_programming), multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional 
+**JavaScript** (**JS**) is a lightweight, interpreted, or [just-in-time](https://en.wikipedia.org/wiki/Just-in-time_compilation) compiled programming language with [first-class functions](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function).JavaScript is a [prototype-based](https://developer.mozilla.org/en-US/docs/Glossary/Prototype-based_programming), multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional 
 programming) styles.
 
 ## Table of Contents
-## Getting Started ⇒ JavaScript Fundamentals
+# Getting Started ⇒ JavaScript Fundamentals
 
 
-
+- [Getting Started ⇒ JavaScript Fundamentals](#getting-started--javascript-fundamentals)
+  - [JavaScript Fundamentals => Part 1](#javascript-fundamentals--part-1)
+  - [Hello World](#hello-world)
+  - [A Brief Introduction Of JavaScript](#a-brief-introduction-of-javascript)
+  - [Linking A JavaScript File](#linking-a-javascript-file)
+  - [Values & Variables](#values--variables)
+  - [Data Types](#data-types)
+    - [The 7 Primitive Data Types](#the-7-primitive-data-types)
+  - [Let, Const & Var](#let-const--var)
+  - [Basic Operators](#basic-operators)
+  - [Operator Precedence](#operator-precedence)
+  - [String & Template literals](#string--template-literals)
+  - [Taking Decisions: If / Else statements](#taking-decisions-if--else-statements)
+  - [Type Conversion & Coercion](#type-conversion--coercion)
+  - [Truthy & Falsy Values](#truthy--falsy-values)
+  - [Equality Operator == vs ===](#equality-operator--vs-)
+  - [Boolean Logic : The AND, OR & NOT Operators](#boolean-logic--the-and-or--not-operators)
+  - [Logical Operators](#logical-operators)
+  - [The Switch Statement](#the-switch-statement)
+    - [Example](#example)
+  - [Statements & Expressions](#statements--expressions)
+  - [The Conditional (Ternary) Operator](#the-conditional-ternary-operator)
+  - [JavaScript Release ES5, ES6+ & ESNext](#javascript-release-es5-es6--esnext)
 - [JavaScript Fundamentals- Part 2](#javascript-fundamentals--part-2)
   - [Activating Strict Mode](#activating-strict-mode)
   - [Functions](#functions)
@@ -30,6 +52,8 @@ programming) styles.
 ----
 
 ## JavaScript Fundamentals => Part 1
+
+---- 
 
 ## Hello World
 
