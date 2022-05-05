@@ -45,6 +45,11 @@ programming) styles.
   - [Basic Arrays Operations Methods](#basic-arrays-operations-methods)
   - [Introduction to Objects](#introduction-to-objects)
   - [Dot vs Braket Notation](#dot-vs-braket-notation)
+  - [Object Methods](#object-methods)
+  - [Iteration: The For Loop](#iteration-the-for-loop)
+  - [Looping Array, Breaking and Continuing](#looping-array-breaking-and-continuing)
+  - [Looping Backwards and Loops in Loops](#looping-backwards-and-loops-in-loops)
+  - [The While Loop](#the-while-loop)
 
 
 ----
@@ -887,4 +892,293 @@ console.log(john);
 // job: "teacher"
 // ​
 // lastName: "Smith"
+
+```
+
+
+## Object Methods
+
+```jsx
+
+const john = {
+  firstName: 'John',
+  lastName: 'Smith',
+  birthYear: 1991,
+  job: 'teacher',
+  favoriteFruit: ['apple', 'orange', 'banana'],
+  hasDrivingLicense: true,
+
+  calcAge: function () {
+    console.log(this);
+    return 2037 - this.birthYear;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()} -years old ${john.job}, and he has ${this.hasDriverLicense ? 'a' : 'no'} driver license`;
+  }
+};
+
+console.log(john.calcAge());
+console.log(john.getSummary());
+
+
+// {
+//   firstName: 'John',
+//   lastName: 'Smith',
+//   birthYear: 1991,
+//   job: 'teacher',
+//   favoriteFruit: [ 'apple', 'orange', 'banana' ],
+//   hasDrivingLicense: true,
+//   calcAge: ƒ calcAge(),
+//   getSummary: ƒ getSummary()
+// }
+// {
+//   firstName: 'John',
+//   lastName: 'Smith',
+//   birthYear: 1991,
+//   job: 'teacher',
+//   favoriteFruit: [ 'apple', 'orange', 'banana' ],
+//   hasDrivingLicense: true,
+//   calcAge: ƒ calcAge(),
+//   getSummary: ƒ getSummary()
+// }
+// 46
+// 'John is a 46 -years old teacher, and he has no driver license'
+
+
+```
+
+
+## Iteration: The For Loop
+
+```jsx
+
+for (let rep = 1; rep <= 30; rep++) {
+  console.log(`Lifting weights repetition ${rep}🏋🏻‍♀️`);
+}
+
+
+// 'Lifting weights repetition 1🏋🏻‍♀️'
+// 'Lifting weights repetition 2🏋🏻‍♀️'
+// 'Lifting weights repetition 3🏋🏻‍♀️'
+// 'Lifting weights repetition 4🏋🏻‍♀️'
+// 'Lifting weights repetition 5🏋🏻‍♀️'
+// 'Lifting weights repetition 6🏋🏻‍♀️'
+// 'Lifting weights repetition 7🏋🏻‍♀️'
+// 'Lifting weights repetition 8🏋🏻‍♀️'
+// 'Lifting weights repetition 9🏋🏻‍♀️'
+// 'Lifting weights repetition 10🏋🏻‍♀️'
+// 'Lifting weights repetition 11🏋🏻‍♀️'
+// 'Lifting weights repetition 12🏋🏻‍♀️'
+// 'Lifting weights repetition 13🏋🏻‍♀️'
+// 'Lifting weights repetition 14🏋🏻‍♀️'
+// 'Lifting weights repetition 15🏋🏻‍♀️'
+// 'Lifting weights repetition 16🏋🏻‍♀️'
+// 'Lifting weights repetition 17🏋🏻‍♀️'
+// 'Lifting weights repetition 18🏋🏻‍♀️'
+// 'Lifting weights repetition 19🏋🏻‍♀️'
+// 'Lifting weights repetition 20🏋🏻‍♀️'
+// 'Lifting weights repetition 21🏋🏻‍♀️'
+// 'Lifting weights repetition 22🏋🏻‍♀️'
+// 'Lifting weights repetition 23🏋🏻‍♀️'
+// 'Lifting weights repetition 24🏋🏻‍♀️'
+// 'Lifting weights repetition 25🏋🏻‍♀️'
+// 'Lifting weights repetition 26🏋🏻‍♀️'
+// 'Lifting weights repetition 27🏋🏻‍♀️'
+// 'Lifting weights repetition 28🏋🏻‍♀️'
+// 'Lifting weights repetition 29🏋🏻‍♀️'
+// 'Lifting weights repetition 30🏋🏻‍♀️'
+
+```
+
+
+## Looping Array, Breaking and Continuing
+
+```jsx
+
+const john = [
+  'John',
+  'Smith',
+  '2037 - 1991',
+  'teacher',
+  ['apple', 'orange', 'banana']
+];
+const types = [];
+
+for (let i = 0; i < john.length; i++) {
+  console.log(john[i], typeof john[i]);
+  // Reading from john array
+  types[i] = typeof john[i];
+
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  // Filling types array
+  ages.push (2037 - years[i]);
+}
+
+console.log(ages);
+
+// continue and break
+console.log('--- ONLY STRINGS ---');
+for (let i = 0; i < john.length; i++) {
+  if (typeof john[i] !== 'string') continue;
+
+  console.log(john[i], typeof john[i]);
+}
+
+console.log('--- BREAK WITH NUMBER ---');
+for (let i = 0; i < john.length; i++) {
+  if (typeof john[i] === 'number') break;
+
+  console.log(john[i], typeof john[i]);
+}
+
+// 'John' 'string'
+// 'Smith' 'string'
+// '2037 - 1991' 'string'
+// 'teacher' 'string'
+// 'object'
+// [ 'apple', 'orange', 'banana' ] 'object'
+// [ 'string', 'string', 'string', 'string', 'object' ]
+
+
+
+
+
+
+
+// 4
+
+// [ 46, 30, 68, 17 ]
+
+
+// '--- ONLY STRINGS ---'
+
+
+
+// 'John' 'string'
+// 'Smith' 'string'
+// '2037 - 1991' 'string'
+// '--- BREAK WITH NUMBER ---'
+// 'teacher' 'string'
+
+
+// 'John' 'string'
+// 'Smith' 'string'
+// '2037 - 1991' 'string'
+// 'teacher' 'string'
+// [ 'apple', 'orange', 'banana' ] 'object'
+
+```
+
+## Looping Backwards and Loops in Loops
+
+```jsx
+
+const john = [
+  'John',
+  'Smith',
+  '2037 - 1991',
+  'teacher',
+  ['apple', 'orange', 'banana']
+];
+
+for (let i = john.length - 1; i >= 0; i--) {
+  console.log(i, john[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`--------- Starting exercise ${exercise} --------`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}🏋🏻‍♀️`);
+  }
+}
+
+
+// 4 [ 'apple', 'orange', 'banana' ]
+// 3 'teacher'
+// 2 '2037 - 1991'
+// 1 'Smith'
+// '--------- Starting exercise 1 --------'
+// 0 'John'
+// '--------- Starting exercise 2 --------'
+// 'Exercise 1: Lifting weight repetition 1🏋🏻‍♀️'
+// 'Exercise 1: Lifting weight repetition 2🏋🏻‍♀️'
+// 'Exercise 1: Lifting weight repetition 3🏋🏻‍♀️'
+// 'Exercise 1: Lifting weight repetition 4🏋🏻‍♀️'
+// 'Exercise 1: Lifting weight repetition 5🏋🏻‍♀️'
+// 'Exercise 2: Lifting weight repetition 1🏋🏻‍♀️'
+// 'Exercise 2: Lifting weight repetition 2🏋🏻‍♀️'
+// 'Exercise 2: Lifting weight repetition 3🏋🏻‍♀️'
+// 'Exercise 2: Lifting weight repetition 4🏋🏻‍♀️'
+// 'Exercise 2: Lifting weight repetition 5🏋🏻‍♀️'
+// '--------- Starting exercise 3 --------'
+// 'Exercise 3: Lifting weight repetition 1🏋🏻‍♀️'
+// 'Exercise 3: Lifting weight repetition 2🏋🏻‍♀️'
+// 'Exercise 3: Lifting weight repetition 3🏋🏻‍♀️'
+// 'Exercise 3: Lifting weight repetition 4🏋🏻‍♀️'
+// 'Exercise 3: Lifting weight repetition 5🏋🏻‍♀️'
+
+```
+
+
+## The While Loop
+
+```jsx
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep}🏋🏻‍♀️`);
+}
+
+let rep = 1;
+while (rep <= 10) {
+  console.log(`Lifting weights repetition ${rep}🏋🏻‍♀️`);
+  rep++;
+}
+
+
+// 'Lifting weights repetition 1🏋🏻‍♀️'
+// 'Lifting weights repetition 2🏋🏻‍♀️'
+// 'Lifting weights repetition 3🏋🏻‍♀️'
+// 'Lifting weights repetition 4🏋🏻‍♀️'
+// 'Lifting weights repetition 5🏋🏻‍♀️'
+// 'Lifting weights repetition 1🏋🏻‍♀️'
+// 'Lifting weights repetition 6🏋🏻‍♀️'
+// 10
+// 'Lifting weights repetition 7🏋🏻‍♀️'
+// 'Lifting weights repetition 8🏋🏻‍♀️'
+// 'Lifting weights repetition 9🏋🏻‍♀️'
+// 'Lifting weights repetition 10🏋🏻‍♀️'
+// 'Lifting weights repetition 2🏋🏻‍♀️'
+// 'Lifting weights repetition 3🏋🏻‍♀️'
+// 'Lifting weights repetition 4🏋🏻‍♀️'
+// 'Lifting weights repetition 5🏋🏻‍♀️'
+// 'Lifting weights repetition 6🏋🏻‍♀️'
+// 'Lifting weights repetition 7🏋🏻‍♀️'
+// 'Lifting weights repetition 8🏋🏻‍♀️'
+// 'Lifting weights repetition 9🏋🏻‍♀️'
+// 'Lifting weights repetition 10🏋🏻‍♀️'
+
+let rep = 1;
+while (rep <= 10) {
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`Rolling dice ${dice}🎲`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log('Loop is about to end...');
+}
+
+// 10
+
 ```
