@@ -30,7 +30,6 @@ programming) styles.
 
 ## JavaScript Fundamentals => Part 1
 
-
 ## Hello World
 
 In your browser, Open developer console and go to console bracket and run:
