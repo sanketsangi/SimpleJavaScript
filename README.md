@@ -643,6 +643,8 @@ console.log(getFee(null));
 
 # JavaScript Fundamentals- Part 2
 
+----
+
 ## Activating Strict Mode
 
 > `"use strict";` Defines that
@@ -657,6 +659,10 @@ JavaScript code should be executed in
 
 ## Functions
 
+A [JavaScript function](#https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) is a block of code designed to perform a particular task.
+A JavaScript function is executed when "something" invokes it (calls it).
+
+
 ```jsx
 function Apple() {
 	console.log('iphone is Apple Inc. Product');
@@ -665,8 +671,9 @@ function Apple() {
 Apple();
 ```
 
-
 ## Function Declarations & Expressions
+The [function declaration](#https://medium.com/@mandeep1012/function-declarations-vs-function-expressions-b43646042052) (function statement) defines a function with the specified parameters.
+
 
 ```jsx
 // Fuction Declaration
@@ -688,6 +695,9 @@ console.log(age1, age2);
 
 
 ## Arrow Functions
+
+An [arrow function](#https://www.codecademy.com/resources/docs/javascript/arrow-functions) expression has a shorter syntax when compared to a function expression and does not have its own this, arguments, super or new.target. These function expressions are best applied to functions other than methods, and they cannot be used as constructors.
+
 
 ```jsx
 // Arrow Function
@@ -712,17 +722,21 @@ conosle.log(yearsUntilRetirement(1980, 'Jacob'));
 
 ## Functions Calling Other Functions
 
+To [call a function inside another function](#https://bobbyhadz.com/blog/javascript-call-function-inside-function), define the inner function inside the outer function and invoke it. When using the function keyword, the function gets hoisted to the top of the scope and can access any of the available variables in the scope.
+
+
+
 ```jsx
 function cutFruitPieces(fruit) {
   return fruit * 4;
 }
 
-function fruitProcessor(apples, oranges) {
-  const applePieces = cutFruitPieces(apples);
-  const orangePieces = cutFruitPieces(oranges);
+  function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
 
-  const juice = `Juice with ${applePieces} apples and ${orangePieces} oranges`;
-  return juice;
+    const juice = `Juice with ${applePieces} apples and ${orangePieces} oranges`;
+    return juice;
 }
 console.log(fruitProcessor(2, 3));
 
@@ -731,6 +745,10 @@ console.log(fruitProcessor(2, 3));
 
 
 ## Introduction to Arrays
+
+An [array](#https://attacomsian.com/blog/javascript-arrays) is a list-like object in JavaScript that can be used to store multiple values in a single variable. It is an ordered-collection of values where each value is called an element that has a pre-defined numeric position in the array, referred to as its index.
+
+
 
 ```jsx
 const fruits = ['apple', 'orange', 'banana'];
@@ -751,6 +769,10 @@ console.log(fruits[fruits-length - 1]);
   
 
 ## Basic Arrays Operations Methods
+
+[JavaScript Array Methods Tutorial – The Most Useful Methods Explained with Examples](#https://www.geeksforgeeks.org/javascript-basic-array-methods/)
+
+
 
 ```jsx
 console.log(newLength);
@@ -815,6 +837,9 @@ if (fruits.includes('orange')) {
 
 ## Introduction to Objects
 
+In JavaScript, most things are [objects](#https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects), from core JavaScript features like arrays to the browser APIs built on top of JavaScript. You can even create your own objects to encapsulate related functions and variables into efficient packages and act as handy data containers. The object-based nature of JavaScript is important to understand if you want to go further with your knowledge of the language, therefore we've provided this module to help you. Here we teach object theory and syntax in detail, then look at how to create your own objects.
+
+
 ```jsx
 const johnArray = [
   'John',
@@ -838,6 +863,11 @@ const john = [
 
 ## Dot vs Braket Notation
 
+Property accessors provide access to an object's properties by using the [dot notation or the bracket notation](#https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors).
+
+
+
+
 ```jsx
 
 const john = {
@@ -853,8 +883,8 @@ console.log(john.lastName);
 console.log(john["lastName"]);
 
 const namekey = 'Name';
-console.log(jonas['first' + nameKey]);
-console.log(jonas['last' + nameKey]);
+console.log(john['first' + nameKey]);
+console.log(john['last' + nameKey]);
 
 const intrestedIn = prompt('What do you want to know about John? Choose between firstName, lastName, age, job and favoriteFruit');
 
@@ -897,6 +927,9 @@ console.log(john);
 
 
 ## Object Methods
+
+[Object Methods](#https://javascript.info/object-methods) in JavaScript can be accessed by using functions. Functions in JavaScript are stored as property values. The objects can also be called without using bracket (). 
+
 
 ```jsx
 
@@ -951,6 +984,12 @@ console.log(john.getSummary());
 
 ## Iteration: The For Loop
 
+[Loops](#https://www.freecodecamp.org/news/exploring-javascript-for-in-loops-bdfc226d8515/) allow programs to perform repetitive tasks, such as iterating through an array, while adhering to the DRY principle (Don’t Repeat Yourself). They come in handy when you want to execute a function a number of times, using different sets of inputs each time.
+
+
+> [Iterate with JavaScript For Loops](#https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/iterate-with-javascript-for-loops)
+
+
 ```jsx
 
 for (let rep = 1; rep <= 30; rep++) {
@@ -993,6 +1032,17 @@ for (let rep = 1; rep <= 30; rep++) {
 
 
 ## Looping Array, Breaking and Continuing
+
+> [Looping Array](#https://www.w3docs.com/snippets/javascript/how-to-loop-through-an-array-in-javascript.html) ➡
+> Loops offer a quick and easy way to do something repeatedly.
+
+> [Breaking](#https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break) ➡
+> The break statement terminates the current loop, switch, or label statement and transfers program control to the statement following the terminated statement.
+
+> [Continuing](#https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue) ➡
+> The continue statement terminates execution of the statements in the current iteration of the current or labeled loop, and continues execution of the loop with the next iteration.
+
+
 
 ```jsx
 
@@ -1077,8 +1127,7 @@ for (let i = 0; i < john.length; i++) {
 
 ```
 
-## Looping Backwards and Loops in Loops
-
+## [Looping Backwards and Loops in Loops](#https://www.techiedelight.com/loop-through-array-backwards-javascript/)
 ```jsx
 
 const john = [
@@ -1130,6 +1179,8 @@ for (let exercise = 1; exercise < 4; exercise++) {
 
 
 ## The While Loop
+
+ The [while](#https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while) statement creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement. 
 
 ```jsx
 
