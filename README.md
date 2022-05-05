@@ -9,6 +9,7 @@ programming) styles.
 ## Getting Started ⇒ JavaScript Fundamentals
 
 
+
 - [JavaScript Fundamentals- Part 2](#javascript-fundamentals--part-2)
   - [Activating Strict Mode](#activating-strict-mode)
   - [Functions](#functions)
