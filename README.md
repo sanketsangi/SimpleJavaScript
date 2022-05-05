@@ -38,6 +38,11 @@ programming) styles.
 - [JavaScript Fundamentals- Part 2](#javascript-fundamentals--part-2)
   - [Activating Strict Mode](#activating-strict-mode)
   - [Functions](#functions)
+  - [Function Declarations & Expressions](#function-declarations--expressions)
+  - [Arrow Functions](#arrow-functions)
+  - [Functions Calling Other Functions](#functions-calling-other-functions)
+  - [Introduction to Arrays](#introduction-to-arrays)
+  - [Basic Arrays Operations Methods](#basic-arrays-operations-methods)
 
 
 ----
@@ -651,4 +656,151 @@ function Apple() {
 }
 
 Apple();
+```
+
+
+## Function Declarations & Expressions
+
+```jsx
+// Fuction Declaration
+function CalcAge1(birthYear) {
+	return 2037 - birthYear;
+}
+const age1 = calcAge1(1991);
+
+// Function Expression
+const calcAge2 = function(birthYear) {
+	return 2037 - birthYear;
+}
+const age2 = calcAge2(1991);
+
+console.log(age1, age2);
+
+// 46 46
+```
+
+
+## Arrow Functions
+
+```jsx
+// Arrow Function
+const calcAge3 = birthYear => 37 - birthYear;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+	const age = 2037 - birthYear;
+	const retirement = 65 - age;
+	
+	//return retirement;
+	return `${firstName} restires in ${retirement} years`;
+} 
+console.log(yearsUntilRetirement(1991, 'John'));
+conosle.log(yearsUntilRetirement(1980, 'Jacob'));
+
+// 46
+// John retires in 19 years
+// Jacob retires in 8 years
+```
+
+## Functions Calling Other Functions
+
+```jsx
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} apples and ${orangePieces} oranges`;
+  return juice;
+}
+console.log(fruitProcessor(2, 3));
+
+// Juice with 8 apples and 12 oranges
+```
+
+
+## Introduction to Arrays
+
+```jsx
+const fruits = ['apple', 'orange', 'banana'];
+console.log(fruits);
+
+const years = [1991, 1992, 1993];
+console.log(years [1]);
+
+console.log(fruits.length);
+console.log(fruits[fruits-length - 1]);
+
+// ["apple", "orange", "banana"]
+// 1992
+// 3
+// 3
+
+```
+  
+
+## Basic Arrays Operations Methods
+
+```jsx
+console.log(newLength);
+
+fruits.unshift('grape');
+console.log(fruits);
+
+// Remove Elements
+fruits.pop(); // Last Element
+const popped = fruits.pop();
+console.log(popped);
+console.log(fruits);
+
+fruits.shift(); // First Element
+console.log(fruits);
+
+console.log(fruits.indexOf('orange'));
+console.log(fruits.indexOf('watermelon'));
+
+fruits.push(23);
+console.log(fruits.includes('orange'));
+console.log(fruits.includes('watermelon'));
+console.log(fruits.includes(23));
+
+
+if (fruits.includes('orange')) {
+  console.log('You have a friend called orange');
+}
+
+
+// Output
+
+// [ 'apple', 'orange', 'banana', 'mango' ]
+// 4
+
+// 5
+// [ 'grape', 'apple', 'orange', 'banana', 'mango' ]
+
+
+// 'mango'
+
+// 'banana'
+// [ 'grape', 'apple', 'orange' ]
+
+// 'grape'
+// [ 'apple', 'orange' ]
+
+// 1
+// -1
+
+// 3
+// true
+// false
+// true
+
+
+// 'You have a friend called orange'
+
+// 
 ```
