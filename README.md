@@ -1,11 +1,8 @@
-## SimpleJavaScript
-[![Simple JavaScript Banner](./assets/SimpleJavaScriptBanner.png)](https://github.com/signuldotdev/SimpleJavaScript/blob/main/README.md)
+[![Simple JavaScript Banner](./assets/SimpleJavaScriptBanner.png)](https://github.com/signuldotdev/SimpleJavaScript/blob/main/README.md) size: 728x60
 
 ## SimpleJavaScript to brush up your JavaScript skills
 
-**JavaScript** (**JS**) is a lightweight, interpreted, or [just-in-time](https://en.wikipedia.org/wiki/Just-in-time_compilation) compiled programming language with [first-class functions](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function). 
-
-JavaScript is a [prototype-based](https://developer.mozilla.org/en-US/docs/Glossary/Prototype-based_programming), multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional 
+**JavaScript** (**JS**) is a lightweight, interpreted, or [just-in-time](https://en.wikipedia.org/wiki/Just-in-time_compilation) compiled programming language with [first-class functions](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function). JavaScript is a [prototype-based](https://developer.mozilla.org/en-US/docs/Glossary/Prototype-based_programming), multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional 
 programming) styles.
 
 ## Table of Contents
