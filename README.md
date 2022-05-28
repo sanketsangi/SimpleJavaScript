@@ -1,8 +1,12 @@
 [![Simple JavaScript Banner](./assets/SimpleJavaScriptBanner.png)](https://github.com/signuldotdev/SimpleJavaScript/blob/main/README.md)
 
-## Duplicate this repo using notion
+<div align="center">
+  <h1>Duplicate this repo using notion</h1>
 
 [![notion-duplicate-repo](https://pbs.twimg.com/profile_images/1510138251889328128/mCjpYHqx_200x200.png)](https://clover-ship-9de.notion.site/Getting-Started-JavaScript-Fundamentals-564d2ad42dd74ff38938a840934a02d6)
+
+</div>
+<br/>
 
 ## SimpleJavaScript to brush up your JavaScript skills
 
